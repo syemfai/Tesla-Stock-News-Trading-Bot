@@ -3,8 +3,6 @@ from datetime import datetime, timedelta
 import os
 from twilio.rest import Client
 
-STOCK_API_KEY = "4SV9774EXPVHRZIE"
-NEWS_API_KEY = "d3481abb3f5d4a3eb8362dfece1779e2"
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 stock_params = {
@@ -66,8 +64,7 @@ print(latest_news)
 ## STEP 3: Use https://www.twilio.com
 # Send a separate message with the percentage change and each article's title and description to your phone number.
 
-account_sid = "AC12aa0e54ea2e34db7253e2dcc9c3ec39"
-auth_token = "55e9ea96e62f3cced61676639d8bea07"
+
 client = Client(account_sid, auth_token)
 #stock_price_diff(daily_close_data[date_yesterday_string], daily_close_data[date_before_yesterday_string])
 if True:
